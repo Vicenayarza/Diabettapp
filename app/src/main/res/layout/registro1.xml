@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewEspacio1"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewEspacio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="190dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textViewEspacio3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <ImageView
+                            android:id="@+id/Logo"
+                            android:layout_width="match_parent"
+                            android:layout_height="135dp"
+                            app:srcCompat="@drawable/logo" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textViewEspacio4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="700dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="415dp"
+                    android:layout_height="736dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:id="@+id/textViewRegistro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/registro"
+                        android:textAlignment="center"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textViewEspacio5"
+                        android:layout_width="match_parent"
+                        android:layout_height="14dp" />
+
+                    <EditText
+                        android:id="@+id/Nombre"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+
+                        android:ems="10"
+                        android:hint="@string/nombre"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="20sp"
+                        android:textColor="#6E7692"
+                        android:textColorHint="#6E7692"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="14dp" />
+
+                    <EditText
+                        android:id="@+id/Apellidos"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+
+                        android:ems="10"
+                        android:hint="@string/apellidos"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="20sp"
+                        android:textColor="#6E7692"
+                        android:textColorHint="#6E7692"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="14dp" />
+
+
+                    <EditText
+                        android:id="@+id/DNI"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="@string/DNI"
+                        android:inputType="number"
+                        android:paddingLeft="20sp"
+                        android:textColor="#6E7692"
+                        android:textColorHint="#6E7692"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/textViewEspacio6"
+                        android:layout_width="match_parent"
+                        android:layout_height="14dp" />
+
+                    <EditText
+                        android:id="@+id/Nacimiento"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="@string/nacimiento"
+                        android:importantForAutofill="no"
+                        android:inputType="date"
+                        android:maxLines="1"
+                        android:onClick="showDatePickerDialog"
+                        android:paddingLeft="20sp"
+                        android:textColor="#6E7692"
+                        android:textColorHint="#6E7692"
+                        android:textSize="22sp"
+                        tools:ignore="KeyboardInaccessibleWidget" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="14dp" />
+
+
+
+                    <EditText
+                        android:id="@+id/Contra1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="@string/contraseña"
+                        android:inputType="textPassword"
+                        android:paddingLeft="20sp"
+                        android:textColor="#6E7692"
+                        android:textColorHint="#6E7692"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/textViewEspacio7"
+                        android:layout_width="match_parent"
+                        android:layout_height="14dp" />
+
+                    <EditText
+                        android:id="@+id/Contra2"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="@string/contra2"
+                        android:inputType="textPassword"
+                        android:paddingLeft="20sp"
+                        android:textColor="#6E7692"
+                        android:textColorHint="#6E7692"
+                        android:textSize="22sp" />
+
+                    <LinearLayout
+                        android:layout_width="392dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/buttonCancelar"
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/atras"
+                            android:layout_marginRight="70dp"/>
+
+                        <Button
+                            android:id="@+id/buttonNext"
+                            android:layout_width="163dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/next" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

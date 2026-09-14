@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".medico.HomeMedico">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="66dp"
+            android:layout_height="65dp"
+            android:src="@drawable/medic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.113"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.024" />
+
+
+        <TextView
+            android:id="@+id/nombredoctor"
+            android:layout_width="280dp"
+            android:layout_height="60dp"
+            android:fontFamily="@font/pb"
+            android:gravity="left"
+            android:textColor="@color/a1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.053" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/tablaResumen"
+            android:layout_width="356dp"
+            android:layout_height="104dp"
+            android:layout_marginTop="32dp"
+            app:cardBackgroundColor="?attr/colorSurface"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nombredoctor"
+            app:strokeColor="?attr/colorOutline"
+            app:strokeWidth="1dp">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+                android:stretchColumns="*">
+
+                <!-- Encabezados -->
+                <TableRow>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="Pacientes"
+                        android:textAppearance="?attr/textAppearanceTitleSmall"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="En Seguimiento"
+                        android:textAppearance="?attr/textAppearanceTitleSmall"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="Sin App"
+                        android:textAppearance="?attr/textAppearanceTitleSmall"
+                        android:textColor="?attr/colorOnSurface"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <!-- Datos -->
+                <TableRow>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/total"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text=""
+
+                        android:textAppearance="?attr/textAppearanceBodyMedium"
+                        android:textColor="@color/lavender" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/segui"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text=""
+                        android:textAppearance="?attr/textAppearanceBodyMedium"
+
+                        android:textColor="@color/green" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/sin"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text=""
+                        android:textAppearance="?attr/textAppearanceBodyMedium"
+                        android:textColor="@color/my_primary" />
+                </TableRow>
+
+            </TableLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroup"
+            android:layout_width="366dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="8dp"
+            android:padding="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tablaResumen"
+            app:layout_constraintVertical_bias="0.026"
+            app:singleSelection="true">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hipoglucemia"
+                app:checkedIcon="@null"
+                app:chipSurfaceColor="@color/colorSurface"
+                app:closeIconStartPadding="20dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip2"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estable" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip3"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hiperglucemia" />
+        </com.google.android.material.chip.ChipGroup>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvA"
+            android:layout_width="334dp"
+            android:layout_height="210dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="204dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chipGroup"
+            app:layout_constraintVertical_bias="0.146" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

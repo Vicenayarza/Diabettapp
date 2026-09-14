@@ -1,0 +1,46 @@
+# Android Studio / IntelliJ
+.idea/
+*.iml
+
+# Gradle
+.gradle/
+build/
+**/build/
+
+# Local configuration
+local.properties
+
+# Android build files
+*.apk
+*.aab
+
+# Native build
+.externalNativeBuild/
+.cxx/
+
+# Generated files
+captures/
+.externalNativeBuild/
+
+# Keystore / signing
+*.jks
+*.keystore
+
+# Google / Firebase sensitive files
+google-services.json
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp

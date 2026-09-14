@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondocomida">
+
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="400dp"
+        android:layout_height="332dp"
+        android:layout_margin="16dp"
+        app:columnCount="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rowCount="3">
+
+        <!-- Botón 1: Desayuno -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btndesayuno"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="180dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:backgroundTint="#FF6F00"
+            android:text="Desayuno"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:cornerRadius="24dp"
+            app:icon="@drawable/des"
+            app:iconGravity="textStart"
+            app:iconPadding="12dp" />
+
+        <!-- Botón 2: Almuerzo -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnalmuerzo"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="180dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:backgroundTint="#FF6F00"
+            android:text="Tentempié"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:cornerRadius="24dp"
+            app:icon="@drawable/al"
+            app:iconGravity="textStart"
+            app:iconPadding="12dp" />
+
+        <!-- Botón 3: Comida -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btncomida"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="180dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:backgroundTint="#FF6F00"
+            android:text="Almuerzo"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:cornerRadius="24dp"
+            app:icon="@drawable/comida"
+            app:iconGravity="textStart"
+            app:iconPadding="12dp" />
+
+        <!-- Botón 4: Merienda -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnmerienda"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="180dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:backgroundTint="#FF6F00"
+            android:text="Merienda"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:cornerRadius="24dp"
+            app:icon="@drawable/mer"
+            app:iconGravity="textStart"
+            app:iconPadding="12dp" />
+
+        <!-- Botón 5: Cena -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btncena"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="180dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:backgroundTint="#FF6F00"
+            android:text="Cena"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:cornerRadius="24dp"
+            app:icon="@drawable/cenn"
+            app:iconGravity="textStart"
+            app:iconPadding="12dp" />
+
+        <!-- Botón 6: Aperitivo -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnaperitivo"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="180dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:backgroundTint="#FF6F00"
+            android:text="Aperitivo"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:cornerRadius="24dp"
+            app:icon="@drawable/aperitivo"
+            app:iconGravity="textStart"
+            app:iconPadding="12dp" />
+
+    </androidx.gridlayout.widget.GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

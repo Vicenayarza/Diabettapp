@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context=".medico.HomeMedico">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie_view"
+            android:layout_width="122dp"
+            android:layout_height="90dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/medico"
+            app:lottie_speed="3" />
+
+        <TextView
+            android:id="@+id/ResumenTitulo"
+            android:layout_width="233dp"
+            android:layout_height="54dp"
+            android:text="Resumen endocrino"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.73"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.018" />
+
+        <TextView
+            android:id="@+id/np"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="29dp"
+            android:text="Nº Pacientes"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/pseg"
+            app:layout_constraintHorizontal_bias="0.359"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ResumenTitulo"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/pseg"
+            android:layout_width="129dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="36dp"
+            android:text="En seguimiento"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/sr"
+            app:layout_constraintTop_toBottomOf="@+id/ResumenTitulo"
+            app:layout_constraintVertical_bias="0.002" />
+
+        <TextView
+            android:id="@+id/sr"
+            android:layout_width="85dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="33dp"
+            android:layout_marginEnd="20dp"
+            android:text="Sin Registrar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ResumenTitulo"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/nump"
+            android:layout_width="86dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="23dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/np"
+            app:layout_constraintVertical_bias="0.014" />
+
+        <TextView
+            android:id="@+id/numseg"
+            android:layout_width="94dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="64dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/nump"
+            app:layout_constraintTop_toBottomOf="@+id/pseg"
+            app:layout_constraintVertical_bias="0.027" />
+
+        <TextView
+            android:id="@+id/numsin"
+            android:layout_width="85dp"
+            android:layout_height="28dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.705"
+            app:layout_constraintStart_toEndOf="@+id/numseg"
+            app:layout_constraintTop_toBottomOf="@+id/sr"
+            app:layout_constraintVertical_bias="0.021" />
+
+        <TextView
+            android:id="@+id/alertas"
+            android:layout_width="193dp"
+            android:layout_height="62dp"
+            android:text="Alertas Rapidas"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/numseg"
+            app:layout_constraintVertical_bias="0.04" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewAlertas"
+            android:layout_width="279dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/alertas"
+            app:layout_constraintVertical_bias="0.015" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="263dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="50dp"
+            android:text="Proximas Citas"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.52"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerViewAlertas"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/IA"
+            android:layout_width="74dp"
+            android:layout_height="68dp"
+            android:layout_marginBottom="104dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="404dp"
+            android:id="@+id/recyclerViewCitas"
+            android:scrollbars="horizontal"
+            android:layout_height="178dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="164dp"
+            app:layout_constraintBottom_toTopOf="@+id/IA"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.428"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView18"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".medico.AjustesMedico"
+    android:background="@color/colorBackground">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="66dp"
+            android:layout_height="65dp"
+            android:src="@drawable/medic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.113"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.024" />
+
+        <TextView
+            android:id="@+id/ajdocnom"
+            android:layout_width="280dp"
+            android:layout_height="60dp"
+            android:fontFamily="@font/pb"
+            android:gravity="left"
+            android:textColor="@color/a1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.031" />
+
+        <LinearLayout
+            android:layout_width="373dp"
+            android:layout_height="618dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.428"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ajdocnom"
+            app:layout_constraintVertical_bias="0.0">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtusu"
+                    android:layout_width="78dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/pb"
+                    android:gravity="center"
+                    android:text="Usuario"
+                    android:textColor="@color/a1"
+                    android:textSize="15sp"
+                     />
+
+                <TextView
+                    android:id="@+id/usuario"
+                    android:layout_width="136dp"
+                    android:layout_height="55dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext"
+                    android:fontFamily="@font/pm"
+                    android:gravity="center"
+                    android:textColor="@color/a1"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtcorreo"
+                    android:layout_width="78dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/pb"
+                    android:gravity="center"
+                    android:text="Correo"
+                    android:textColor="@color/a1"
+                    android:textSize="15sp"
+                    />
+
+                <TextView
+                    android:id="@+id/correo"
+                    android:layout_width="136dp"
+                    android:layout_height="55dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext"
+                    android:fontFamily="@font/pm"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/a1"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtNueva"
+                    android:layout_width="78dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/pb"
+                    android:gravity="center"
+                    android:text="Contraseña"
+                    android:textColor="@color/a1"
+                    android:textSize="15sp"
+                    />
+
+                <EditText
+                    android:id="@+id/contraNueva"
+                    android:layout_width="136dp"
+                    android:layout_height="55dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext"
+                    android:drawableLeft="@drawable/candado"
+                    android:gravity="center"
+                    android:textColor="@color/a1"
+                    android:hint="@string/contraseña"
+                    android:inputType="textPassword" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/idioma"
+                    android:layout_width="78dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/pb"
+                    android:gravity="center"
+                    android:text="Idioma"
+                    android:textColor="@color/a1"
+                    android:textSize="15sp"
+                    />
+
+                <Spinner
+                    android:id="@+id/spinneridioma"
+                    android:layout_width="136dp"
+                    android:layout_height="55dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.921"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.067" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="77dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/guardar"
+                    android:layout_width="147dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="100dp"
+                    android:text="@string/guardar"
+                    android:textSize="18sp"
+                    app:cornerRadius="30dp"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

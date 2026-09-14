@@ -1,0 +1,39 @@
+<resources>
+    <!-- Inicio Sesion -->
+    <string name="app_name">TFG</string>
+    <string name="inicio_sesion">Inicio de Sesión</string>
+    <string name="usuario">Usuario</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="acceder">Acceder</string>
+    <string name="no_cuenta">¿No tienes cuenta?</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="olvido">He olvidado la contraseña</string>
+    <!-- Registro -->
+    <string name="registro">Registro</string>
+    <string name="datos">Datos del persona</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="DNI">DNI sin letra</string>
+    <string name="nacimiento">Fecha de nacimiento</string>
+    <string name="altura">Altura</string>
+    <string name="peso">Peso</string>
+    <string name="contra2">Repita la contraseña</string>
+    <string name="atras">Atrás</string>
+    <string name="next">Siguiente</string>
+    <string name="telefono">Nº Telefono</string>
+    <string name="correo">Correo electrónico</string>
+
+    <string name="guardar">Guardar</string>
+    <string name="nuevacita">Nueva Cita</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_lista_medico_adapter">ListaMedicoAdapter</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="previous">Previous</string>
+    <!--MainActivity -->
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+
+</resources>

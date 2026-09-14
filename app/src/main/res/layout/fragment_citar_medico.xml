@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".medico.CitarMedico">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Spinner
+            android:id="@+id/lunch_spinner"
+            android:layout_width="248dp"
+            android:layout_height="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.902"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.007" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="136dp"
+            android:layout_height="44dp"
+            android:fontFamily="@font/pb"
+            android:gravity="end|center_vertical"
+            android:text="Paciente"
+            android:textColor="@color/a1"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.007"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.007" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardP"
+            android:layout_width="320dp"
+            android:layout_height="49dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="8dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lunch_spinner"
+            app:layout_constraintVertical_bias="0.031"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="308dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:weightSum="1">
+
+                <!-- Imagen de perfil -->
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="12dp"
+                    android:scaleType="centerCrop" />
+
+
+                <TextView
+                    android:id="@+id/nl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:textColor="@color/a1"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="320dp"
+            android:layout_height="241dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardP"
+            app:layout_constraintVertical_bias="0.046"
+            app:mcv_calendarMode="month"
+            app:mcv_firstDayOfWeek="monday"
+            app:mcv_selectionColor="@color/a1"
+            app:mcv_showOtherDates="other_months|out_of_range|decorated_disabled"
+            app:mcv_tileSize="28dp"
+             />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvcit"
+            android:layout_width="353dp"
+            android:layout_height="176dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.32"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calendarView"
+            app:layout_constraintVertical_bias="0.233" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

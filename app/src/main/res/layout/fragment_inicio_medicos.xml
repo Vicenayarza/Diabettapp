@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".InicioSesion.InicioMedicos">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="640dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="355dp"
+                android:layout_height="153dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/fondo" />
+
+            <EditText
+                android:id="@+id/usuariomedico"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/edittext"
+                android:drawableLeft="@drawable/user"
+                android:drawablePadding="8dp"
+                android:hint="@string/usuario"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/passmedico"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext"
+                android:drawableLeft="@drawable/candado"
+                android:drawablePadding="8dp"
+                android:hint="@string/contraseña"
+                android:inputType="textPassword"
+                android:padding="8dp" />
+
+            <Button
+                android:id="@+id/loginmedico"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:text="@string/acceder"
+                android:textSize="18sp"
+                app:cornerRadius="30dp" />
+
+            <TextView
+                android:id="@+id/olvidomedico"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:text="@string/olvido"
+                android:textColor="@color/a2"
+                android:textColorHint="#6E7692"
+                android:textSize="24sp"
+                tools:ignore="DuplicateIds" />
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

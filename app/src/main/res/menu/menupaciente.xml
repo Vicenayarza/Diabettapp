@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Principal">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/snv_homep"
+                    android:title="Inicio"
+                    />
+
+                <item
+                    android:id="@+id/snv_ejercicio"
+                    android:title="Ejercicio"
+                    />
+
+                <item
+                    android:id="@+id/snv_comida"
+                    android:title="Comida"
+                    />
+
+            </group>
+
+        </menu>
+
+    </item>
+
+    <item android:title="Consultas">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/snv_pedircita"
+                    android:title="Pedir Cita"
+                    />
+
+                <item
+                    android:id="@+id/snv_miscitas"
+                    android:title="Mis Citas"
+                    />
+
+
+
+            </group>
+
+        </menu>
+
+    </item>
+    <item android:title="Chats">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/snv_asis"
+                    android:title="Asistente"
+                    />
+
+                <item
+                    android:id="@+id/snv_chatm"
+                    android:title="Chat"
+                    />
+            </group>
+
+        </menu>
+    </item>
+    <item android:title="Datos">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/snv_graficos"
+                    android:title="Informes"
+                   />
+
+                <item
+                    android:id="@+id/snv_datos"
+                    android:title="Datos"
+                    />
+            </group>
+
+        </menu>
+
+    </item>
+
+    <item android:title="Otros">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/snv_settings"
+                    android:title="Ajustes"
+                    />
+
+                <item
+                    android:id="@+id/snv_logout"
+                    android:title="Cerrar Sesión"
+                   />
+
+            </group>
+
+        </menu>
+
+    </item>
+
+</menu>

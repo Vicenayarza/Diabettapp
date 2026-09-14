@@ -1,0 +1,56 @@
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginHorizontal="16dp"
+android:layout_marginVertical="8dp"
+app:cardCornerRadius="16dp"
+app:cardElevation="4dp"
+app:strokeWidth="1dp"
+>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageViewCitas"
+        android:layout_width="62dp"
+        android:layout_height="59dp"
+        android:layout_marginEnd="12dp"
+
+        android:background="@drawable/circlebackground"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/FechaHora"
+        android:layout_width="74dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/mon"
+        android:gravity="center|start"
+        android:text="17*25/2"
+        android:textColor="@color/a1"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nombrecita"
+            android:layout_width="95dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="0.6"
+            android:fontFamily="@font/pm"
+            android:gravity="left"
+            android:text="Jul"
+            android:textColor="@color/a1"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+
+</LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

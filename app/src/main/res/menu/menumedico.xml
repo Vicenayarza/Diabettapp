@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Principal">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/snv_home"
+                    android:title="Inicio"
+                    />
+
+                <item
+                    android:id="@+id/snv_agenda"
+                    android:title="Agenda"
+                    />
+
+                <item
+                    android:id="@+id/snv_asistente"
+                    android:title="Asistente"
+                    />
+
+            </group>
+
+        </menu>
+
+    </item>
+
+    <item android:title="Pacientes">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/snv_pacientes"
+                    android:title="Control Paciente"
+                    />
+
+                <item
+                    android:id="@+id/snv_chats"
+                    android:title="Chats"
+                   />
+
+                <item
+                    android:id="@+id/snv_citar"
+                    android:title="Asignar Cita"
+                    />
+
+            </group>
+
+        </menu>
+
+    </item>
+
+    <item android:title="Otros">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/snv_ajustes"
+                    android:title="Ajustes"
+                    />
+
+                <item
+                    android:id="@+id/snv_cerrar"
+                    android:title="Cerrar Sesion"
+                    />
+
+
+
+            </group>
+
+        </menu>
+
+    </item>
+
+</menu>

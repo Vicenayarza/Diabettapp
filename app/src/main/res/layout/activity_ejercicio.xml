@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".paciente.Ejercicio"
+    android:background="@color/colorBackground">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/toolbar"
+        android:layout_width="409dp"
+        android:layout_height="72dp"
+        android:background="@color/colorBackground"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/i2"
+            android:layout_width="57dp"
+            android:layout_height="47dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.048"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/atras"
+            app:lottie_speed="3" />
+
+        <TextView
+            android:id="@+id/other_username"
+            android:layout_width="179dp"
+            android:layout_height="58dp"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/pb"
+            android:gravity="center"
+            android:text="Deporte"
+            android:textColor="@color/a1"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.449"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/IA2"
+            android:layout_width="57dp"
+            android:layout_height="47dp"
+            android:src="@drawable/gym"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.918"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.6" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/iconContainer"
+        android:layout_width="318dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.738"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.193">
+
+        <ImageView
+            android:id="@+id/iAnd"
+            android:layout_width="50dp"
+            android:layout_height="39dp"
+            android:background="@drawable/circlebackground"
+            android:contentDescription="Caminar"
+            android:padding="8dp"
+            android:src="@drawable/andar"
+            android:tag="Caminar" />
+
+        <ImageView
+            android:id="@+id/iBic"
+            android:layout_width="50dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/circlebackground"
+            android:contentDescription="Bici"
+            android:padding="8dp"
+            android:src="@drawable/bici"
+            android:tag="Ciclismo" />
+
+        <ImageView
+            android:id="@+id/iCor"
+            android:layout_width="50dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/circlebackground"
+            android:contentDescription="Correr"
+            android:padding="8dp"
+            android:src="@drawable/correr"
+            android:tag="Correr" />
+
+        <ImageView
+            android:id="@+id/ipad"
+            android:layout_width="50dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/circlebackground"
+            android:contentDescription="padel"
+            android:padding="8dp"
+            android:src="@drawable/padel"
+            android:tag="Padel" />
+
+        <ImageView
+            android:id="@+id/iNad"
+            android:layout_width="50dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/circlebackground"
+            android:contentDescription="nadar"
+            android:padding="8dp"
+            android:src="@drawable/nadar"
+            android:tag="Natacion" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ejercicio"
+        android:layout_width="311dp"
+        android:layout_height="54dp"
+        android:fontFamily="@font/pb"
+        android:gravity="center"
+        android:textColor="@color/a1"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iconContainer"
+        app:layout_constraintVertical_bias="0.048" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="367dp"
+        android:layout_height="275dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="148dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.681"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ejercicio">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="327dp"
+            android:layout_height="154dp"
+            app:layout_constraintBottom_toTopOf="@+id/min"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ScrollView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <TextView
+                    android:id="@+id/ejemplo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp" />
+            </ScrollView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/min"
+            android:layout_width="110dp"
+            android:layout_height="41dp"
+            android:fontFamily="@font/pm"
+            android:gravity="center"
+            android:text="minutos"
+            android:textColor="@color/a1"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/mins"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.893" />
+
+        <EditText
+            android:id="@+id/mins"
+            android:layout_width="147dp"
+            android:layout_height="59dp"
+            android:background="@drawable/edittext"
+            android:fontFamily="@font/pm"
+            android:gravity="center"
+            android:textColor="@color/lavender"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.072"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.925" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="134dp"
+        android:layout_height="63dp"
+        android:layout_gravity="center"
+        android:text="Empezar"
+        android:textSize="18sp"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
